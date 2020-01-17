@@ -1,0 +1,28 @@
+{
+chefs: [
+  '{{repeat(40)}}',
+  {
+    _id: '{{objectId()}}',
+    firstName: '{{firstName()}}',
+    lastName: '{{surname()}}',
+    abilities: [
+      {
+        type: 'Risotto',
+        rating: '{{integer(20, 100)}}'
+      },
+      {
+        type: 'Pizza',
+        rating: '{{integer(20, 100)}}'
+      },
+      {
+        type: 'Cake',
+        rating: '{{integer(20, 100)}}'
+      },
+      {
+        type: 'Baked Potato',
+        rating: '{{integer(20, 100)}}'
+      }
+    ]
+  }
+]
+}
